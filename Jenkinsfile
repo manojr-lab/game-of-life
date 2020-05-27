@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Docker Build'){
             steps{
-                 sh "docker build -t manoj523/GOL-app:${BUILd_NUMBER}"
+                 sh "docker build -t manoj523/gol-app:${BUILd_NUMBER} ."
             }
             
         }
