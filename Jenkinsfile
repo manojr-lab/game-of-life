@@ -7,8 +7,11 @@ pipeline{
     stages{
         stage('Code Build'){
             steps{
-                sh 'mvn clean package'
+                sh 'mvn clean packageclear'
             }
+        }
+        stage('Docker Build'){
+            sh "docker build -t manoj523/GOL-app:${BUILd_NUMBER}"
         }
     }
 }
