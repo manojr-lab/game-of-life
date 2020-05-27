@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('Code Build'){
             steps{
-                sh 'mvn clean packageclear'
+                sh 'mvn clean package'
        }
         }
         stage('Docker Build'){
